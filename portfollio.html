@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <title>Page Title</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .hero-image {
+      background-image: url("1.jpg");
+
+      background-size: auto;
+      position: relative;
+    }
+
+    .row {
+      display: inline-flex;
+
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+    }
+
+    .item1 {
+      display: flex;
+      grid-area: right;
+      border: 8px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item2 {
+      display: flex;
+      grid-area: center;
+      border: 8px solid white;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item3 {
+      display: flex;
+      grid-area: left;
+      border: 8px solid black;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .itemu1 {
+      grid-area: right;
+
+    }
+
+    .itemu2 {
+      grid-area: center;
+    }
+
+    .itemu3 {
+      grid-area: left;
+    }
+
+    .grid-container {
+
+      display: grid;
+      grid-template-areas:
+        'right center left';
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      grid-auto-columns: 1fr;
+
+      background-color: #928b8b;
+      padding: 1%;
+    }
+
+    .fakeimg1 {
+      background-color: #aaa;
+      max-width: 90%;
+      left: 5%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .split {
+      height: 100%;
+      width: 15%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .split2 {
+      height: 100%;
+      width: 85%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .right {
+      right: 0;
+
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+
+
+    .fakeimg {
+      align-content: center;
+      background-color: white;
+      width: 120px;
+      height: 120px;
+      padding: 10px;
+    }
+
+    .bolded {
+      font-stretch: normal;
+      font-weight: bold;
+      font-size: 130%;
+      color: black;
+      left: 35%;
+      font-size-adjust: initial;
+    }
+
+    .bolded1 {
+      font-stretch: normal;
+      font-weight: bold;
+      font-size: 130%;
+      color: black;
+      left: 35%;
+      font-size-adjust: initial;
+    }
+
+    .side {
+      display: flex;
+      background-color: #f1f1f1;
+      padding: 5%;
+      font-size: 100%;
+      height: 90%;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      border-width: 5px;
+      border-color: #000000;
+
+    }
+
+    .grid-containeru {
+      left: 15%;
+      display: grid;
+      grid-template-areas:
+        'right center left';
+      text-align: center;
+      justify-content: center;
+      align-items: center
+    }
+
+    .footer {
+
+      text-align: center;
+      background: black;
+
+
+    }
+
+    @media screen and (max-width: 900px) {
+      .row {
+        grid-template-columns: 100%;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+
+      .grid-container {
+
+        grid-template-areas:
+          'right'
+          'center'
+          ' left';
+        text-align: center;
+        justify-content: center;
+        align-items: center
+      }
+
+    }
+
+    @media screen and (max-width: 1050px) {
+      .bolded {
+        font-size: 100%;
+
+      }
+
+      .bolded1 {
+        font-size: 120%;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .bolded {
+        font-size: 70%;
+      }
+
+      .bolded1 {
+        font-size: 90%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .bolded {
+        font-size: 50%;
+      }
+
+      .bolded1 {
+        font-size: 70%;
+      }
+
+      .grid-containeru {
+        background-color: #5d5b5b;
+        grid-template-areas:
+          'right'
+          'center'
+          ' left';
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .bolded {
+        font-size: 30%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="split left hero-image">
+    <img class="fakeimg1" src="BU.png" alt="Avatar woman">
+    <div class="centered">
+      <br><br>
+      <h2 class="bolded1" style=" background-color: rgba(170, 170, 170, 0.700);">weekly work</h2>
+      <a href="1\1.html"><img src="icons8-calendar-1-50.png" alt="HTML tutorial"
+
+          style="width:42px;height:42px;"></a>
+      <a href="2\2.html"><img src="icons8-calendar-2-50.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="3\3.html"><img src="icons8-calendar-3-50.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="4\lab4.html"><img src="icons8-calendar-4-50.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="5\5.html"><img src="icons8-calendar-5-50.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="6\lab6.html"><img src="icons8-calendar-6-50.png" alt="HTML tutorial"
+          style="background-color: rgba(161, 153, 153, 0.712); width:42px;height:42px;"></a>
+          <a href="7\7.html"><img src="icons8-calendar-7-50.png" alt="HTML tutorial"
+            style="background-color: rgba(161, 153, 153, 0.712); width:42px;height:42px;"></a>
+
+    </div>
+  </div>
+
+  <div class="split2 right" style="text-align: center; background-color: rgba(0, 0, 0, 0.277);">
+    <!-- upper part -->
+    <h1>this is my life </h1>
+
+
+
+
+
+
+
+
+
+    <div class="grid-container ">
+      <div class="item1">
+
+        <h1 class="bolded">I was born in bethlehem</h1>
+        <img class="fakeimg" src="Bethlehem.webp" alt="bu" title="logo">
+
+
+      </div>
+
+      <div class="item2">
+        <h1 class="bolded">I also study in Bethlehem university</h1>
+        <img class="fakeimg" style="background-color: #000000;" src="Bethlehem-Universit.jpg" alt="bu" title="logo">
+      </div>
+
+
+      <div class="item3">
+        <h1 class="bolded">my major is software engineering</h1>
+        <img class="fakeimg" src="Software.webp" alt="bu" title="logo">
+      </div>
+
+    </div>
+
+    <!-- lower part -->
+
+
+
+    <div class="grid-container ">
+      <div class="item1">
+
+        <h1 class="bolded">that's my life cycle as an engineer</h1>
+        <img class="fakeimg" src="sdlc.jpg" alt="bu" title="logo">
+
+
+      </div>
+
+      <div class="item2">
+        <h1 class="bolded">my minor is body building </h1>
+        <img class="fakeimg" style="background-color: #000000;" src="gym.jpg" alt="bu" title="logo">
+
+      </div>
+
+
+      <div class="item3">
+        <h1 class="bolded">and that is my real life cycle </h1>
+
+        <img class="fakeimg" src="gyml.png" alt="bu" title="logo">
+      </div>
+
+    </div>
+    <h1>these people inspire me </h1>
+    <div class="grid-containeru">
+
+      <div class="itemu1">
+
+        <div class="row">
+          <div class="side">
+            <h1 class="bolded">Adel Emam</h1>
+            <img class="fakeimg" src="adel.jpg" alt="bu" title="logo">
+
+
+          </div>
+        </div>
+      </div>
+      <div class="itemu2">
+
+        <div class="row">
+
+
+
+          <div class="side">
+            <h1 class="bolded">Steve Harvey</h1>
+            <img class="fakeimg" src="steve.jpg" alt="bu" title="logo">
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="itemu3">
+        <div class="row">
+
+
+          <div class="side">
+            <h1 class="bolded">ابو شعرات </h1>
+
+            <img class="fakeimg" src="mah.jpeg" alt="bu" title="logo">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1 style="color: white ;">while ( !( succeed = try() ) );</h1>
+      <br>
+      <h2 style="color: white ;">
+        Rami Abu Ayyash
+      </h2>
+      <br>
+      <h4 style="color: white ;">202006721</h4>
+    </div>
+  </div>
+
+</body>
+
+</html>

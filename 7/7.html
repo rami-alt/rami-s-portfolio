@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="mainCont" class="flex-container">
+  
+ 
+
+
+<script>
+for (let i = 0; i< 256; i++) {
+let divElement = document.createElement('div');
+divElement.style="background-color: rgb("+i+" ,0,0)";
+divElement.innerHTML = i;
+let refMainCo =document.getElementById("mainCont");
+refMainCo.appendChild(divElement);
+}
+for (let h = 0; h< 256; h++) {
+let divElement1 = document.createElement('div');
+divElement1.style="background-color: rgb(0,0,"+h+")";
+divElement1.innerHTML = h;
+let refMainCo =document.getElementById("mainCont");
+refMainCo.appendChild(divElement1);
+}
+for (let f = 0; f< 256; f++) {
+let divElement2 = document.createElement('div');
+divElement2.style="background-color: rgb(0,"+f+",0)";
+divElement2.innerHTML = f;
+let refMainCo =document.getElementById("mainCont");
+refMainCo.appendChild(divElement2);
+}
+for (let x = 0; x< 256; x++) {
+    let e=Math.floor(Math.random() * 257);
+    let r=Math.floor(Math.random() * 257);
+    let t=Math.floor(Math.random() * 257);
+let divElement3 = document.createElement('div');
+divElement3.style="background-color: rgb("+e+","+r+","+t+")";
+divElement3.innerHTML = x;
+let refMainCo =document.getElementById("mainCont");
+refMainCo.appendChild(divElement3);
+}
+
+
+</script>
+
+
+<textarea id="myTextarea">
+342 Alvin Road
+Ducksburg hi 22 </textarea>
+
+<p>Click the button to get the content of the text area.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let txtob = document.getElementById("myTextarea");
+  let txt=txtob.value;
+  alert(txt.length);
+alert(countWords(txt));
+
+}
+function countWords(str) {
+    let count="0";
+  for (let index = 0; index < str.length; index++) {
+    
+    if (str.charAt(index)==' ') {
+count++;
+        
+    }
+ 
+    
+  }
+  return count;
+}
+</script>
+</div>
+
+</body>
+</html>

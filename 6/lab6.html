@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>  
+    <title>Page Title</title>
+    <meta charset ="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+
+    gap: 1%;
+  background-color: #25f321;
+  padding:1%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+}
+.fakeimg {
+  background-color: #aaa;
+max-width: 300px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px ) { 
+    .item2{
+      display: none;  
+    }
+    .grid-container {
+        background-color: #4821f3;
+  grid-template-areas:
+    'header header header header  '
+    'main main main right'
+    'footer footer footer footer ';
+}
+}
+@media screen and (max-width: 400px) {
+    .item4{
+      display: none;  
+    }
+    .grid-container {
+        background-color: #f3b821;
+  grid-template-areas:
+  
+    'header header header '
+    'main main main '
+    'footer footer footer ';
+}}
+</style>
+</head>
+<body>
+   
+<div class="grid-container">
+  <div class="item1"><h2>
+    Web practical exam</h2><br>
+    <h3>Rami AbuAyyash</h3>
+    <br><h3>202006721</h3></div>
+  <div class="item2"><h1>hi</h1></div>
+  <div class="item3">
+    <img class="fakeimg" src="img_5terre.jpg" alt="bu"
+    title="logo" >
+    <img class="fakeimg" src="img_forest.jpg" alt="bu"
+    title="logo" >
+    <img class="fakeimg" src="img_lights.jpg" alt="bu"
+    title="logo" >
+    <img class="fakeimg" src="img_mountains.jpg" alt="bu"
+    title="logo" >
+
+
+
+    
+  </div>  
+  <div class="item4">TAKE IT EASY</div>
+  <div class="item5">BYE BYE</div>
+</div>
+
+</body>
+</html>
+
+

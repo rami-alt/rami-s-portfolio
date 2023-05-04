@@ -1,0 +1,12 @@
+ <a href="http://202006721.epizy.com/1.html"><img src="icons8-calendar-1-24.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="http://202006721.epizy.com/2.html"><img src="icons8-calendar-2-24.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="http://202006721.epizy.com/3.html"><img src="icons8-calendar-3-24.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="http://202006721.epizy.com/lab4.html"><img src="icons8-calendar-4-24.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="http://202006721.epizy.com/5.html"><img src="icons8-calendar-5-24.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>
+      <a href="http://202006721.epizy.com/lab6.html"><img src="icons8-calendar-6-24.png" alt="HTML tutorial"
+          style="width:42px;height:42px;"></a>

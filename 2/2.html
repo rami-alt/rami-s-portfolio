@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<title>personal</title>
+
+</head>
+<body>
+<h1>HTML</h1>
+
+
+<h2 >This is prepared by YOUR NAME and ID </h2>
+
+
+
+
+<table style="width:70%">
+  <tr>
+    <th colspan="2">This is prepared by YOUR NAME and ID </th>
+   
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>ID</td>
+    
+  </tr>
+  <tr>
+    <td>Rami</td>
+    <td>202006721</td>
+    
+  </tr>
+  
+</table>
+<br><img src="lab2.png" alt="myfacebookpage" width="300" height="200"
+title="my facebookpage">
+<p style="font-size:150%;">
+    A paragraph always starts on a new line, and is usually a block of text.
+</p>
+<h1>HTML Paragraphs</h1>
+
+
+
+    
+    
+ 
+    <button type="button" class="collapsible">HTML Paragraphs</button>
+    <div class="content">
+        <h3>The HTML &lt;p&gt; element defines a paragraph.</h3>
+        <p>
+            A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+            <br>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+            <br>&lt;p&gt;This is another paragraph.&lt;/p&gt;
+               
+        </p>
+    </div>
+
+    <button type="button" class="collapsible">HTML Display</button>
+    <div class="content">
+        <h3>The HTML &lt;p&gt; element defines a paragraph.</h3>
+        <p>
+            You cannot be sure how HTML will be displayed.<br>
+            Large or small screens, and resized windows will create different results.<br>
+            With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<br>
+            The browser will automatically remove any extra spaces and lines when the page is displayed:<br>               
+        </p>
+        <h2>CODE</h2>
+        <p>
+            <pre>
+            &lt;p&gt;
+            This paragraph
+            contains a lot of lines
+            in the source code,
+            but the browser
+            ignores it.
+            &lt;/p&gt;
+            
+            &lt;p&gt;
+            This paragraph
+            contains         a lot of spaces
+            in the source         code,
+            but the        browser
+            ignores it.
+            &lt;/p&gt;</pre>
+            
+        </p>
+    </div>
+    
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    </body>
+</html>
+
